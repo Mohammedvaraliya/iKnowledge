@@ -17,7 +17,7 @@ It is a platform where a writer or a group of writers share their views on an in
 ![image](https://user-images.githubusercontent.com/95087498/175276084-93bcffbc-4407-4b63-9221-a86f33eb9649.png)
 
 
-![image](https://user-images.githubusercontent.com/95087498/175276181-ae7fa511-2a5d-46cd-a61c-c990cab9f572.png)
+![image](https://user-images.githubusercontent.com/95087498/175278484-5127645d-d021-4fa2-8968-8215586c6714.png)
 
 
 <h1>Requirments</h1>
