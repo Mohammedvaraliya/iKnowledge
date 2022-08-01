@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %} iKnowledge Home {% endblock title %}
+
+{% block homeactive %} active {% endblock homeactive %}
+
+{% block body %}
+
+<div class="container my-3">
+<div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
+      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
+      <p class="lead mb-0"><a href="/blog" class="text-white fw-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+  
+  <div class="container my-3">
+    <div class="row my-2">
+    <h2>Popular posts </h2>
+  {% for post in allPosts %}
+
+  {% if post.views > 10 %}
+  <div class="col-md-6">
+  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-1 shadow-sm h-md-250 my-2 position-relative mx-2">
+    <div class="col p-4 d-flex flex-column position-static">
+      <strong class="d-inline-block mb-2 text-primary">Article by {{post.author}} ({{post.views}} views)</strong>
+      <h3 class="mb-0"><a class="text-dark" href="/blog/{{post.slug}}">{{post.title}} </a></h3>
+      <div class="mb-1 text-muted">{{post.timeStamp.date}}</div>
+      <p class="card-text mb-auto">
+      <div class="preview">{{post.discription|safe |truncatechars:170 }}</div>
+      </p>
+      <div class="my-2">
+        <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading...</a>
+      </div>
+    </div>
+    <div class="col-auto d-none d-lg-block">
+      <img src="/media/{{post.thumbnail}}" class="bd-placeholder-img" width="270" height="350"
+        aria-label="Placeholder: Thumbnail">
+    </div>
+
+
+  </div>
+    </div>
+    {% if forloop.counter|divisibleby:2%}
+    </div>
+    <div class="row my-2">
+      {%endif%}
+      {% endif %}
+      {%endfor%}</div>
+
+
+
+
+{% endblock body %}

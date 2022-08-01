@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %} iKnowledge Search Result {% endblock title %}
+
+{% block body %}
+
+<div class="container my-3">
+    <h2>Search results:</h2>
+
+    {% if allPosts|length < 1 %}
+    
+    <p>Your search query - <b>{{query}}</b> - did not match any documents. <br>
+
+        Suggestions: <br></p>
+        
+    <ul>
+    <li>
+        Make sure that all words are spelled correctly. </li>
+    <li>Try different keywords. </li>
+    <li>Try more general keywords.</li>
+        
+    
+    </ul>
+   
+
+    {% endif %}
+
+    {% for post in allPosts %}
+    
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 my-4 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Article by {{post.author}}</strong>
+              <h3 class="mb-0">{{post.title}}</h3>
+              <div class="mb-1 text-muted">{{post.timeStamp.date}}</div>
+              <p class="card-text mb-auto">{{post.discription | truncatechars:500 }}</p>
+              <div class="my-2">
+                  <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading...</a>
+              </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="/media/{{post.thumbnail}}" class="bd-placeholder-img" width="250" height="300"
+                aria-label="Placeholder: Thumbnail">
+            </div>
+
+                 
+          </div>
+
+          {% endfor %}
+          </div>
+
+{% endblock body %}
