@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 import os
+import django_heroku
 from pathlib import Path
 from django.contrib.messages import constants as messages
 
@@ -82,10 +83,10 @@ WSGI_APPLICATION = 'iCoder.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "iknowledge",
-        "USER": "iknowledge",
-        "PASSWORD": "varaliya123",
-        "HOST": 'localhost',
+        "NAME": "d65rhjhich5cf6",
+        "USER": "ysmahctgwoupxc",
+        "PASSWORD": "7dc37ae7470bbf896a8403d711e361eef5ff63ce317a89a78e278610f79f50c0",
+        "HOST": 'ec2-3-223-242-224.compute-1.amazonaws.com',
         "PORT": '5432',
     }
 }
@@ -125,8 +126,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = 'static/'
+django_heroku.settings(locals())
 
 # Managing media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
