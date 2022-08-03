@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 import os
+import django_heroku
 from pathlib import Path
 from django.contrib.messages import constants as messages
 
@@ -25,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-c3u!817y1z52g1e5phjau^s5399#6g^l^^0u%1^aoat_w0u95@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'iknowledgesystem.herokuapp.com']
 
@@ -82,10 +83,10 @@ WSGI_APPLICATION = 'iCoder.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "iknowledge",
-        "USER": "iknowledge",
-        "PASSWORD": "varaliya123",
-        "HOST": 'localhost',
+        "NAME": "d65rhjhich5cf6",
+        "USER": "ysmahctgwoupxc",
+        "PASSWORD": "7dc37ae7470bbf896a8403d711e361eef5ff63ce317a89a78e278610f79f50c0",
+        "HOST": 'ec2-3-223-242-224.compute-1.amazonaws.com',
         "PORT": '5432',
     }
 }
@@ -127,6 +128,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+django_heroku.settings(locals())
 
 # Managing media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
