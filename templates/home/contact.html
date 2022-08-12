@@ -5,8 +5,12 @@
 {% block contactactive %} active {% endblock contactactive %}
 
 {% block body %}
-<div class="container my-3">
-<h3>Contact iKnowledge Admin</h3>
+<div class="container-fluid px-0 mb-3">
+  <img src="https://source.unsplash.com/1200x400/?phone,contact" class="d-block w-100 mx-0" alt="...">
+</div>
+
+<div class="container mb-3 py-4">
+<h3 class="text-center">Contact iKnowledge Admin</h3>
 <form action="/contact" method="post">
 {% csrf_token %}
   <div class="form-group">
