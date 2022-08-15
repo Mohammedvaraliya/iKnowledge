@@ -67,17 +67,17 @@
   <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-1 shadow-sm h-md-250 my-2 position-relative mx-2">
     <div class="col p-4 d-flex flex-column position-static">
       <strong class="d-inline-block mb-2 text-primary">Article by {{post.author}} ({{post.views}} views)</strong>
-      <h3 class="mb-0"><a class="text-dark" href="/blog/{{post.slug}}">{{post.title}} </a></h3>
+      <h3 class="mb-0"><a class="text-dark" href="/blog/{{post.slug}}">{{post.title|safe |truncatechars:16 }} </a></h3>
       <div class="mb-1 text-muted">{{post.timeStamp.date}}</div>
       <p class="card-text mb-auto">
-      <div class="preview">{{post.discription|safe |truncatechars:170 }}</div>
+      <div class="preview">{{post.discription|safe |truncatechars:160 }}</div>
       </p>
       <div class="my-2">
-        <a href="/blog/{{post.slug}}" role="button" class="btn btn-primary">Continue reading...</a>
+        <a href="/blog/{{post.slug}}" role="button" class="btn btn-dark btn-sm">Continue reading...</a>
       </div>
     </div>
     <div class="col-auto d-none d-lg-block">
-      <img src="/media/{{post.thumbnail}}" class="bd-placeholder-img" width="270" height="350"
+      <img src="/media/{{post.thumbnail}}" class="bd-placeholder-img" width="270" height="350" 
         aria-label="Placeholder: Thumbnail">
     </div>
 

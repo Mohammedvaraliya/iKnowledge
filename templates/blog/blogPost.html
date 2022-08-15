@@ -11,6 +11,10 @@
   border-right: 1px solid black;
   height: auto;
 }
+.v2 {
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
 {% endblock css %}
 
 {% block body %}
@@ -23,8 +27,8 @@
   <div class="row">
 <div class="col-md-9">
     <div class="vl">
-  <h2 class="blog-post-title">{{post.title}}</h2>
-  <p class="blog-post-meta">{{post.timeStamp}} by <a href="/about">{{post.author}}</a> (<span><b>{{post.views}} views</b></span>)</p>
+  <h2 class="blog-post-title v2">{{post.title}}</h2>
+  <p class="blog-post-meta v2">{{post.timeStamp}} by <a href="/about">{{post.author}}</a> (<span><b>{{post.views}} views</b></span>)</p><br><hr><marquee direction="left"><b>{{post.title}} by {{post.author}}</b></marquee> <hr>
   
   <p>{{post.content|safe}}</p>
   <hr>
