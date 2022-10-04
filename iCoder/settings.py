@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'iCoder.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "d65rhjhich5cf6",
-        "USER": "ysmahctgwoupxc",
-        "PASSWORD": "7dc37ae7470bbf896a8403d711e361eef5ff63ce317a89a78e278610f79f50c0",
-        "HOST": 'ec2-3-223-242-224.compute-1.amazonaws.com',
+        "NAME": "d8kc9f889tfukv",
+        "USER": "ltbbqstkiyzada",
+        "PASSWORD": "05cba3ccbd3dbf9727e93ce051515eb157a611340fd60af1f1ddeb0a7f5ccd47",
+        "HOST": 'ec2-52-0-142-65.compute-1.amazonaws.com',
         "PORT": '5432',
     }
 }
