@@ -1,5 +1,5 @@
-venv
-_pycache_
+# venv
+# _pycache_
 # *.pyc
 # .python_version
 # *.egg-info
