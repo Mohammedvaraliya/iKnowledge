@@ -1,18 +1,18 @@
 venv
 _pycache_
-*.pyc
-.python_version
-*.egg-info
-.python-version
-db.sqlite3
-.vscode
-.idea
-local_settings.py
-.env
-theme/# Byte-compiled / optimized / DLL files
-_pycache_/
-*.py[cod]
-*$py.class
+# *.pyc
+# .python_version
+# *.egg-info
+# .python-version
+# db.sqlite3
+# .vscode
+# .idea
+# local_settings.py
+# .env
+# theme/# Byte-compiled / optimized / DLL files
+# _pycache_/
+# *.py[cod]
+# *$py.class
 
 # # C extensions
 # *.so
