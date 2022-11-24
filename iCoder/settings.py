@@ -10,6 +10,12 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import environ
+
+env = environ.Env()
+# reading .env file
+environ.Env.read_env()
+
 import os
 import django_heroku
 from pathlib import Path
@@ -83,9 +89,9 @@ WSGI_APPLICATION = 'iCoder.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'iknowledge',
-      'USER':'postgres',
-      'PASSWORD':'postgres',
+      'NAME': env("DATABASE_NAME"),
+      'USER': env("DATABASE_USER"),
+      'PASSWORD': env("DATABASE_PASSWORD"),
       'HOST':'localhost',
       'PORT':'5432',
    }
