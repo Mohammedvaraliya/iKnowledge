@@ -94,7 +94,6 @@ pypiwin32==223
 pyrsistent==0.18.1
 python-dateutil==2.8.2
 pytz==2022.1
-pywin32==305
 pywin32-ctypes==0.2.0
 pywinpty==2.0.7
 pyzmq==24.0.1
