@@ -9,26 +9,50 @@ It is a platform where a writer or a group of writers share their views on an in
   Click here to visit website
 </a>
 
-
-
 # Website overview
 
-![image](https://user-images.githubusercontent.com/95087498/175275805-bf01b7ae-4001-4ff1-9a7d-c58fc691f7c4.png)
+**App Preview :**
+
+<table width="100%"> 
+<tr>
+<td width="50%">      
+&nbsp; 
+<br>
+<p align="center">
+  Feed Home
+</p>
+<img src="https://user-images.githubusercontent.com/95087498/175275805-bf01b7ae-4001-4ff1-9a7d-c58fc691f7c4.png">
+</td> 
+<td width="50%">
+<br>
+<p align="center">
+  Blogs Feed
+</p>
+<img src="https://user-images.githubusercontent.com/95087498/175275934-d9c1d19a-a046-4fc7-b589-583171f3f09e.png">
+</td>
+</tr>
+<tr>
+<td width="50%">
+<br>
+<p align="center">
+  Blog Post
+</p>
+<img src="https://user-images.githubusercontent.com/95087498/175276084-93bcffbc-4407-4b63-9221-a86f33eb9649.png">
+<img src="https://user-images.githubusercontent.com/95087498/175278484-5127645d-d021-4fa2-8968-8215586c6714.png">
+</td>
+<td width="50%">
+<br>
+<p align="center">
+  About Page
+</p>
+<img src="https://user-images.githubusercontent.com/95087498/175275878-c382efa2-d3ac-4f8b-87ba-cdd8bce9737e.png">
+</td>
+</tr>
+</table>
 
 
-![image](https://user-images.githubusercontent.com/95087498/175275878-c382efa2-d3ac-4f8b-87ba-cdd8bce9737e.png)
+## Requirments
 
-
-![image](https://user-images.githubusercontent.com/95087498/175275934-d9c1d19a-a046-4fc7-b589-583171f3f09e.png)
-
-
-![image](https://user-images.githubusercontent.com/95087498/175276084-93bcffbc-4407-4b63-9221-a86f33eb9649.png)
-
-
-![image](https://user-images.githubusercontent.com/95087498/175278484-5127645d-d021-4fa2-8968-8215586c6714.png)
-
-
-<h1>Requirments</h1>
 python3<br>
 django<br>
 
